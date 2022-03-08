@@ -22,8 +22,10 @@ img {
 }
 
 .image-group {
+    width: 95%;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .row,
@@ -37,6 +39,16 @@ ul {
 
 .bottom {
     margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.decalage {
+    padding-left: 30px;
+}
+
+.text-decale {
+    width: 600px;
 }
 
 section {
@@ -55,4 +67,34 @@ footer {
 #dark-mode {
     margin-left: 30px;
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    nav {
+        margin: 0 auto;
+        width: 320px;
+    }
+    .image-group {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    img {
+        height: 250px;
+        width: auto;
+    }
+    #img1 {
+        margin: 0 auto;
+    }
+    .text-decale {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .decalage {
+        padding-left: 0px;
+        margin: 0 auto;
+    }
 }
